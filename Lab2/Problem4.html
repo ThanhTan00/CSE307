@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+</head>
+<style type="text/css">
+	tr td input, textarea {
+		width: 97%;
+	}
+</style>
+<body>
+	<colgroup>
+		<col width="30px">
+		<col>
+	</colgroup>
+	<center>
+		<form method="get">
+		<table width="500px" border="1">
+			<tr>
+				<td><label for="name"><b>Fullname*</b></label></td>
+				<td><input id="name" name="name" type="text" placeholder="Please enter your fullname" required></td>
+			</tr>
+			<tr>
+				<td><label for="email"><b>Email*</b></label></td>
+				<td><input id="email" name="email" type="email" placeholder="Please enter your email" required></td>
+			</tr>
+			<tr>
+				<td><label for="pass"><b>Password*</b></label></td>
+				<td><input id="pass" name="pass" type="Password" placeholder="Please enter your password" required></td>
+			</tr>
+			<tr>
+				<td><label for="confirm"><b>Confirm Password*</b></label></td>
+				<td><input id="confirm" name="confirm" type="Password" placeholder="Please enter your password again" required></td>
+			</tr>
+			<tr>
+				<td><label for="phone"><b>Phone number*</b></label></td>
+				<td><input id="phone" name="phone" type="number" placeholder="Please enter your phone number" required></td>
+			</tr>
+			<tr>
+				<td><label for="address"><b>Address</b></label></td>
+				<td><textarea id="address" name="address" type="text" placeholder="Please enter your address" ></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="city"><b>City</b></label></td>
+				<td>
+					<input id="city" name="city" style="width: 180px" type="text" placeholder="Enter your City" >
+					<span><label for="state"><b>State</b></label></span>
+					<input id="state" name="city" style="width:100px" type="text" placeholder="Enter your state" >
+				</td>
+			</tr>
+			<tr>
+				<td><label for="zipcode"><b>ZIP/Postal Code</b></label></td>
+				<td><input name="zipcode" id="zipcode" type="textarea" placeholder="Enter your ZIP/Postal Code"></td>
+			</tr>
+			<tr>
+				<td><label for="country"><b>Country</b></label></td>
+				<td>
+					<select id="country" name="country">
+						<option>[Select your country]</option>
+						<option>Vietnam</option>
+						<option>Thailand</option>
+						<option>Laos</option>
+						<option>Cambodia</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="birthday"><b>Birthday</b></label></td>
+				<td><input name="birthday" id="birthday" type="date"></td>
+			</tr>
+			<tr>
+				<td><label for="gender"><b>Gender</b></label></td>
+				<td>
+					<select id="gender" name="gender">
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="zipcode"><b>Starting date</b></label></td>
+				<td>
+					<input style="width: 20px" id="spring" type="radio" name="starting"><label for="spring">Spring</label>
+					<input style="width: 20px" id="spring2" type="radio" name="starting"><label for="spring2">Summer</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="comment"><b>Comments</b></label></td>
+				<td><textarea id="comment" name="address" type="text" placeholder="Please send us more information" ></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2"><center><input style="width: 70px" type="submit"></center></td>
+			</tr>
+		</table>
+		</form>
+	</center>
+</body>
+</html>
