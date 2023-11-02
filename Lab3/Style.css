@@ -1,0 +1,46 @@
+.content {
+	width: 600px;
+	background-color: rgb(222, 242, 249);
+	border: 1px solid darkblue;
+	padding-bottom: 20px;
+}
+a {
+	text-decoration: none;
+}
+.width-500 {
+	idth: 500px;
+}
+img {
+	width: 300px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.hleft {
+	float: left;
+}
+.hright {
+	float: right;
+
+}
+nav {
+	border: solid 2px blue;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: rgb(162, 235, 177) ;
+}
+nav ul li {
+	height: 20px;
+	display: inline;
+	border-right: solid 1px;
+	padding: 5px 5px;
+}
+header a:hover{
+	color: red;
+}
+nav ul li:hover {
+	text-decoration: underline;
+}
