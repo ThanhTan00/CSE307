@@ -1,6 +1,9 @@
 .content {
-	width: 600px;
+	width: 300px;
+	margin-right: 10px;
+	margin-top: 10px;
 	background-color: rgb(222, 242, 249);
+	border-radius: 10px;
 	border: 1px solid darkblue;
 	padding-bottom: 20px;
 }
@@ -11,11 +14,11 @@ a {
 	idth: 500px;
 }
 img {
-	width: 300px;
+	width: 200px;
 }
 header {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-end;
 }
 .hleft {
@@ -44,3 +47,103 @@ header a:hover{
 nav ul li:hover {
 	text-decoration: underline;
 }
+body {
+	position: relative;
+	z-index: 0;
+}
+.z-index {
+	height: 30px;
+	width: 30px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	border-radius: 50%;
+	background-color: rgb(3, 105, 60);
+	color: white;
+}
+aside#left, aside#right, section {
+	display: table-cell;
+	vertical-align: top;
+	margin-top: 10px;
+}
+aside#left, aside#right {
+	width: 20%;
+}
+.left-menu h4 {
+	text-align: center;
+	margin-top: 0px;
+	color: white;
+	height: 30px;
+	border-radius: 10px;
+	background-color: rgb(32, 106, 181);
+}
+.left-menu {
+	border: solid 1px rgb(32, 106, 181);
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+.right-menu h1 {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: white;
+	height: 30px;
+	border-radius: 10px;
+	background-color: rgb(32, 106, 181);
+}
+.right-menu {
+	border: solid 1px rgb(32, 106, 181);
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+section {
+	max-width: 30%;
+	padding-bottom: 20px;
+}
+.product {
+	display: table-cell;
+}
+.height-500 {
+	height: 500px;
+}
+.right-menu h3 {
+	color: red;
+	margin-left: 20px;
+}
+.right-menu select {
+	margin-left: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 100px;
+	background-color: rgb(121, 178, 47);
+}
+.margin-left-100 {
+	margin-right: 100px;
+}
+ .btn {
+ 	width: 90px;
+ 	height: 30px;
+ 	background-color: rgb(32, 106, 181);
+ 	color: white;
+ 	border: none;
+ 	border-radius: 5px;
+ }
+ .regist-form {
+ 	width: 90%; 
+ 	border: 2px solid darkblue; 
+ 	padding: 20px;
+ 	margin-top: 10px;
+ 	background-color: rgb(199, 229, 242) ;
+ 	border: dashed 2px lightgreen;
+ 	border-radius: 10px;
+ }
