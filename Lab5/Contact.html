@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contact</title>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<script src="https://kit.fontawesome.com/d69b483815.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	</head>
+	<body>
+		<header>
+			<div class="d-flex justify-content-between">
+				<div>
+					<img src="img/logoABCbook.png">
+				</div>
+				<div class="d-flex align-items-end">
+				  	<div>
+				  		<p>
+				  			<i class="fa-regular fa-circle-user" style="color: #2c333a;"></i><a class="head-link" href="login.html"><b> Log in </b></a>|
+				  			<a class="head-link" href="#"><b> Registration </b></a>|
+				  			<i class="fa-solid fa-cart-shopping"></i><a class="head-link" href="#"><b> Cart </b></a>
+				  		</p>
+				  	</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			  <div class="container-fluid">
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			        <li class="nav-item">
+			          <a href="Homepage.html"><button type="button" class="btn btn-success nav-btn">HOME PAGE</button></a>
+			        </li>
+			        <li class="nav-item">
+			          <button type="button" class="btn btn-success nav-btn">INTRODUCTION</button>
+			        </li>
+			         <li class="nav-item">
+			          <button type="button" class="btn btn-success nav-btn">CONTACT</button>
+			        </li>
+			        <li class="nav-item dropdown">
+			          <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
+			            <button type="button" class="btn btn-success nav-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">BOOK BY SUBJECT</button>
+			          <!-- </a> -->
+			          <ul class="dropdown-menu">
+			            <li><a class="dropdown-item" href="#">Information technology</a></li>
+			            <li><a class="dropdown-item" href="#">Smartphone</a></li>
+			            <li><a class="dropdown-item" href="#">Law</a></li>
+			            <li><a class="dropdown-item" href="#">Literature</a></li>
+			            <li><a class="dropdown-item" href="#">Science and technology</a></li>
+			            <li><a class="dropdown-item" href="#">Agriculture</a></li>
+			            <li><a class="dropdown-item" href="#">History of geography</a></li>
+			            <li><a class="dropdown-item" href="#">Economics</a></li>
+			            <li><a class="dropdown-item" href="#">Listen to th song</a></li>
+			          </ul>
+			        </li>
+			        <li class="nav-item dropdown">
+			            <button type="button" class="btn btn-success nav-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">BOOK BY PUBLISHER</button>
+			          <ul class="dropdown-menu">
+			            <li><a class="dropdown-item" href="#">Young Publisher</a></li>
+			            <li><a class="dropdown-item" href="#">Static Publisher</a></li>
+			            <li><a class="dropdown-item" href="#">Bronze Needle</a></li>
+			            <li><a class="dropdown-item" href="#">Literature</a></li>
+			            <li><a class="dropdown-item" href="#">National University</a></li>
+			            <li><a class="dropdown-item" href="#">Artistic Craft Culture</a></li>
+			            <li><a class="dropdown-item" href="#">Culture</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			      <form class="d-flex" role="search">
+			        <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+			        <button style="width: 50%;" class="btn btn-success search-btn" type="submit">Find Books</button>
+			      </form>
+			    </div>
+			  </div>
+			</nav>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-3">
+					<div class="contact-form">
+						<div class="text-center">
+							<h3>Contact Us</h3>
+						</div>
+						<form >
+						  <div class="mb-4">
+						    <label for="name" class="form-label">Name</label>
+						    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+						  </div>
+						  <div class="mb-3">
+						    <label for="email" class="form-label">Email</label>
+						    <input type="email" class="form-control" id="email">
+						  </div>
+						  <div class="mb-3">
+						    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						  </div>
+						  <div class="d-flex justify-content-center">
+						  	<button onclick="showAlert()" style="align-items-end" type="submit" class="btn btn-success btn-contact">Submit</button>
+						  </div>
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-4"></div>
+			</div>
+		</div>
+		<footer class="d-flex justify-content-around">
+			<div>
+				<div class="d-flex justify-content-around">
+					<p>2016 - ABC BookStore. Allright Reserved</p>
+				</div>
+				<div class="d-flex justify-content-around">
+					<p>Website is developed to be used as a hands-on exercise in Web Programming</p>
+				</div>
+				<div class="d-flex justify-content-around">
+					<p>Email: <a href="">abcbookstore@gmail.com</a></p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			function showAlert() {
+				alert("Please fill in all feilds.")
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	</body>
+</html>
