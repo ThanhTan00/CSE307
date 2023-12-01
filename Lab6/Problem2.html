@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<title>Problem 2</title>
+</head>
+<style type="text/css">
+	tr th {
+		width: 200px;
+	}
+	input {
+		width: 95%;
+		font-weight: bold;
+	}
+</style>
+<body>
+	<table border="solid 1px black">
+		<thead>
+			<tr>
+				<th>str</th>
+				<th>ParseInt(str)</th>
+				<th>ParseFloat(str)</th>
+				<th>Number(str)</th>
+				<th>+str</th>
+				<th>str|0</th>
+			</tr>
+		</thead>
+		<tbody id="table">
+			<tr>
+				<td><input id="val1" type="text" value="1234"></td>
+				<td id="parseInt1">?</td>
+				<td id="parseFloat1">?</td>
+				<td id="number1">?</td>
+				<td id="str1">?</td>
+				<td id="xor1">?</td>
+			</tr>
+			<tr>
+				<td><input id="val2" type="text" value="1234abc"></td>
+				<td id="parseInt2">?</td>
+				<td id="parseFloat2">?</td>
+				<td id="number2">?</td>
+				<td id="str2">?</td>
+				<td id="xor2">?</td>
+			</tr>
+			<tr>
+				<td><input id="val3" type="text" value="0.15"></td>
+				<td id="parseInt3">?</td>
+				<td id="parseFloat3">?</td>
+				<td id="number3">?</td>
+				<td id="str3">?</td>
+				<td id="xor3">?</td>
+			</tr>
+			<tr>
+				<td><input id="val4" type="text" value="3.14ivan"></td>
+				<td id="parseInt4">?</td>
+				<td id="parseFloat4">?</td>
+				<td id="number4">?</td>
+				<td id="str4">?</td>
+				<td id="xor4">?</td>
+			</tr>
+			<tr>
+				<td><input id="val5" type="text" value="Infinity"></td>
+				<td id="parseInt5">?</td>
+				<td id="parseFloat5">?</td>
+				<td id="number5">?</td>
+				<td id="str5">?</td>
+				<td id="xor5">?</td>
+			</tr>
+			<tr>
+				<td><input id="val6" type="text" value="9999999"></td>
+				<td id="parseInt6">?</td>
+				<td id="parseFloat6">?</td>
+				<td id="number6">?</td>
+				<td id="str6">?</td>
+				<td id="xor6">?</td>
+			</tr>
+		</tbody>
+	</table>
+	<p id="temp"></p>
+	<p id="result"></p>
+	<button onclick="resultFunction()">Result</button>
+
+	<script type="text/javascript">
+		function resultFunction() {
+			var val1 = document.getElementById("val1").value;
+			document.getElementById("parseInt1").innerHTML = `${parseInt(val1)}`;
+			document.getElementById("parseFloat1").innerHTML = `${parseFloat(val1)}`;
+			document.getElementById("number1").innerHTML = `${Number(val1)}`;
+			document.getElementById("str1").innerHTML = `${val1+val1}`;
+			document.getElementById("xor1").innerHTML = `${val1|0}`;
+
+			var val2 = document.getElementById("val2").value;
+			document.getElementById("parseInt2").innerHTML = `${parseInt(val2)}`;
+			document.getElementById("parseFloat2").innerHTML = `${parseFloat(val2)}`;
+			document.getElementById("number2").innerHTML = `${Number(val2)}`;
+			document.getElementById("str2").innerHTML = `${val2+val2}`;
+			document.getElementById("xor2").innerHTML = `${val2|0}`;
+
+			var val3 = document.getElementById("val3").value;
+			document.getElementById("parseInt3").innerHTML = `${parseInt(val3)}`;
+			document.getElementById("parseFloat3").innerHTML = `${parseFloat(val3)}`;
+			document.getElementById("number3").innerHTML = `${Number(val3)}`;
+			document.getElementById("str3").innerHTML = `${val3+val3}`;
+			document.getElementById("xor3").innerHTML = `${val3|0}`;
+
+			var val4 = document.getElementById("val4").value;
+			document.getElementById("parseInt4").innerHTML = `${parseInt(val4)}`;
+			document.getElementById("parseFloat4").innerHTML = `${parseFloat(val4)}`;
+			document.getElementById("number4").innerHTML = `${Number(val4)}`;
+			document.getElementById("str4").innerHTML = `${val4+val4}`;
+			document.getElementById("xor4").innerHTML = `${val4|0}`;
+
+			var val5 = document.getElementById("val5").value;
+			document.getElementById("parseInt5").innerHTML = `${parseInt(val5)}`;
+			document.getElementById("parseFloat5").innerHTML = `${parseFloat(val5)}`;
+			document.getElementById("number5").innerHTML = `${Number(val5)}`;
+			document.getElementById("str5").innerHTML = `${val5+val5}`;
+			document.getElementById("xor5").innerHTML = `${val5|0}`;
+
+			var val6 = document.getElementById("val6").value;
+			document.getElementById("parseInt6").innerHTML = `${parseInt(val6)}`;
+			document.getElementById("parseFloat6").innerHTML = `${parseFloat(val6)}`;
+			document.getElementById("number6").innerHTML = `${Number(val6)}`;
+			document.getElementById("str6").innerHTML = `${val6+val6}`;
+			document.getElementById("xor6").innerHTML = `${val6|0}`;
+		}
+	</script>
+</body>
+</html>
