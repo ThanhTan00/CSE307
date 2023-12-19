@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Thoong Coffee</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Licorice&family=Noto+Sans:ital@1&family=Roboto&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/d69b483815.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	<body>
+		<header>
+			<div class="d-flex justify-content-between align-items-center contact_small">
+				<div class="d-flex justify-content-start contact_left">
+					<p><i class="fa-sharp fa-solid fa-location-dot"></i>   Số 4, đường D5, KDC Chánh Nghĩa, p.Chánh Nghĩa, tp.Thủ Dầu Một, Bình Dương</p>
+					<p><i class="fa-solid fa-phone"></i> 0386725616</p>
+				</div>
+				<div class="d-flex justify-content-start contact_right">
+					<p><a href=""><i class="fa-solid fa-user-pen"></i> Đăng kí thành viên</a> | <a href=""> Đăng nhập</a></p>
+				</div>
+			</div>
+			<!-- Destop Menu -->
+			<div class="menu_bar d-flex align-items-stretch justify-content-center">
+			   <div>
+			   		<a href="#"><img class="menu_logo img-fluid" src="images\logo.jpg"></a>
+			   </div>
+			   <ul class="nav_menu">
+			   		<a href=""><li>Trang chủ</li></a>
+			   		<a href=""><li>Giới thiệu</li></a>
+			   		<a href=""><li>Tin tức</li></a>
+			   		<a href=""><li>Menu</li></a>
+			   		
+			   </ul>
+			   <div class="search_form">
+			   		<form class="d-flex" role="search">
+					    <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+					    <button type="button" class="btn btn-outline-light">Tìm kiếm</button>
+					</form>
+				</div>
+			</div>
+			<!-- End -->
+			<!-- Mobile Menu -->
+			<div class="mobileMenu">
+				<nav class="navbar navbar_mobile fixed-top">
+				  <div class="container-fluid">
+				    <a style="color: white;" class="navbar-brand" href="#">
+				    	<img style="width: 50px" src="images\logo.jpg">
+				    	Thoong Coffee
+				    </a>
+				    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				      <div class="offcanvas-header">
+				        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Thoong Coffee</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				      </div>
+				      <div class="offcanvas-body">
+				        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				          <li class="nav-item">
+				            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+				          </li>
+				          <li class="nav-item">
+				            <a class="nav-link" href="#">Giới thiệu</a>
+				          </li>
+				          <li class="nav-item">
+				            <a class="nav-link" href="#">Tin tức</a>
+				          </li>
+				          <li class="nav-item">
+				            <a class="nav-link" href="#">Menu</a>
+				          </li>
+				        </ul>
+				        <form class="d-flex mt-3" role="search">
+				          <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+				          <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+				        </form>
+				      </div>
+				    </div>
+				  </div>
+				</nav>
+			</div>
+			<!-- End -->
+		</header>
+		<!-- Cacusel -->
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				   	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				 </div>
+				 <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      	<img src="images\slider1.jpg" class="d-block w-100" alt="...">
+				      	<div class="carousel-caption d-none d-md-block">
+				        <h5>First slide label</h5>
+				        <p>Some representative placeholder content for the first slide.</p>
+				     </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images\Slider2.jpg" class="d-block w-100" alt="...">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>Second slide label</h5>
+				        <p>Some representative placeholder content for the second slide.</p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images\Slider3.jpg" class="d-block w-100" alt="...">
+				      <div class="carousel-caption d-none d-md-block">
+				        <h5>Third slide label</h5>
+				        <p>Some representative placeholder content for the third slide.</p>
+				      </div>
+				    </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+				<div class="body-title">
+					<div class="d-flex justify-content-center">
+						<h2>TẠI SAO CHỌN THOONG COFFEE</h2>
+					</div>
+					<div class="d-flex justify-content-center">
+						<hr class="hr_title">
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card whyus_card">
+							  <img src="images\service-icon.png" class="card-img-top" alt="...">
+							  <div class="card-body">
+							    <h5 class="card-title">Đồ uống đa dạng</h5>
+							    <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+							  </div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card whyus_card">
+							  <img src="images\service-icon.png" class="card-img-top" alt="...">
+							  <div class="card-body">
+							    <h5 class="card-title">Không gian thoáng đãng</h5>
+							    <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+							  </div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card whyus_card">
+							  <img src="images\service-icon.png" class="card-img-top" alt="...">
+							  <div class="card-body">
+							    <h5 class="card-title">Nhân viên nhiệt tình, thân thiện</h5>
+							    <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="more_btn d-flex justify-content-center">
+						<button type="button" class="btn btn-outline-success">Xem thêm</button>
+					</div>
+				</div>
+				<div class="bestseller_div">
+					<div class="bestseller_title d-flex justify-content-center">
+						<h2>Sản phẩm <span style="font-family: 'Licorice', cursive; font-weight: bold; color: gold;">NỔI BẬT</span> ở Thoong Coffee</h2>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4">
+								<a href="">
+									<div class="bestseller_cart card text-center mb-3">
+										<img src="images\best_seller1.jpg" class="card-img-top">
+									  <div class="card-body">
+									    <h5 class="card-title">Nước ép trái cây nhiệt đới</h5>
+									    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									    <p class="card-text"><strong>Giá: 47.000.000đ</strong></p>
+									  </div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="">
+									<div class="bestseller_cart card text-center mb-3">
+										<img src="images\best_seller2.jpg" class="card-img-top">
+									  <div class="card-body">
+									    <h5 class="card-title">Cafe nước cốt dừa</h5>
+									    <p class="card-text">Thành phần: Cafe Robusta, nước cốt dừa, sữa đặc, kem rich, sữa tươi không đường, đá xay nhuyễn</p>
+											<p class="card-text"><strong>Giá: 44.000.000đ</strong></p>								  </div>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<a href="">
+									<div class="bestseller_cart card text-center mb-3">
+										<img src="images\best_seller3.jpg" class="card-img-top">
+									  <div class="card-body">
+									    <h5 class="card-title">Nước ép dâu táo</h5>
+									    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+											<p class="card-text"><strong>Giá: 42.000.000đ</strong></p>								  </div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="places_div">
+					<div class="card mb-3 place_card">
+					  <div class="row g-0">
+					    <div class="col-md-4">
+					      <img src="images\place_img.jpg" class="img-fluid rounded-start" alt="...">
+					    </div>
+					    <div class="col-md-8">
+					      <div class="card-body place_card_body">
+					        <h2 class="card-title color_white">Điểm phục vụ</h2>
+					        <p class="card-text color_white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+									<button type="button" class="btn btn-outline-light">Xem thêm <i class="fa-solid fa-angles-right"></i></button>					      
+								</div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="body-title">
+					<div class="d-flex justify-content-center">
+						<h2>CÓ GÌ TẠI THOONG COFFEE</h2>
+					</div>
+					<div class="d-flex justify-content-center">
+						<hr class="hr_title">
+					</div>
+				</div>
+				<div class="container img_div">
+					<div class="row">
+						<!-- Hình bên trái -->
+						<div class="col-md-4">
+							<div class="img_left">
+								<div class="row">
+									<div class="col"></div>
+									<div class="col-md-10">
+										<img class="img-fluid" src="images\img10.jpg">
+									</div>
+								</div>
+								<div class="row">
+									<img class="img-fluid" src="images\img9.jpg">
+								</div>
+								<div class="row">
+									<img class="img-fluid" src="images\img11.jpg">
+								</div>
+								<div class="row">
+									<div class="col"></div>
+									<div class="col-md-10">
+										<img class="img-fluid" src="images\img12.jpg">
+									</div>
+								</div>
+								<div class="row">
+									<img class="img-fluid" src="images\img6.jpg">
+								</div>
+								<div class="row">
+									<div class="col"></div>
+									<div class="col-md-10">
+										<img class="img-fluid" src="images\img22.jpg">
+									</div>
+									<div class="row">
+									<img class="img-fluid" src="images\img20.jpg">
+								</div>
+								</div>
+							</div>
+						</div>
+						<!-- End -->
+						<!-- Hình ở giữa -->
+						<div class="img_middle col-md-4">
+							<div class="row">
+								<img class="img-fluid" src="images\img5.jpg">
+							</div>
+							<div class="row">
+								<img class="img-fluid" src="images\img4.jpg">
+							</div>
+							<div class="row">
+								<img class="img-fluid" src="images\img2.jpg">
+							</div>
+							<div class="row">
+								<img class="img-fluid" src="images\img18.jpg">
+							</div>
+							<div class="row">
+								<img class="img-fluid" src="images\img15.jpg">
+							</div>
+							<div class="row">
+								<img class="img-fluid" src="images\cake.jpg">
+							</div>
+						</div>
+						<!-- End -->
+						<!-- Hình bên phải -->
+						<div class="col-md-4">
+							<div class="img_right">
+								<div class="row">
+									<div class="col-md-10">
+										<img class="img-fluid" src="images\img7.jpg">
+									</div>
+									<div class="col"></div>
+								</div>
+								<div class="row">
+									<img class="img-fluid" src="images\img8.jpg">
+								</div>
+								<div class="row">
+									<img class="img-fluid" src="images\img14.jpg">
+								</div>
+								<div class="row">
+									<div class="col-md-10">
+										<img class="img-fluid" src="images\img13.jpg">
+									</div>
+									<div class="col"></div>
+								</div>
+								<div class="row">
+									<img class="img-fluid" src="images\img19.jpg">
+								</div>
+								<div class="row">
+									<div class="col-md-10">
+										<img class="img-fluid" src="images\img17.jpg">
+									</div>
+									<div class="col"></div>
+								</div>
+								<div class="row">
+									<img class="img-fluid" src="images\img23.jpg">
+								</div>
+							</div>
+						</div>
+						<!-- End -->
+					</div>
+				</div>
+				<!-- End -->
+				<!-- Tin tức & Khách hàng -->
+				<div class="body-title">
+					<div class="d-flex justify-content-center">
+						<h2>Tin tức & Khách hàng</h2>
+					</div>
+					<div class="d-flex justify-content-center">
+						<hr class="hr_title">
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="customer ">
+								<center><h5 class="card_title">Đánh giá của khách hàng</h5></center>
+								<marquee direction="up" onMouseMove="stop()" onMouseOut="start()">
+									<div class="customer_feedback d-flex align-items-center">
+									  <div class="flex-shrink-0">
+									    <img class="cus_img img-fluid" src="images\truonggiang.jpg" alt="...">
+									  </div>
+									  <div class="flex-grow-1 ms-3">
+									  	<strong>Nguyễn Trường Giang</strong>
+									  	<p>10 điểm, đồ uống thân thiện, nhân viên ngon.
+									  		<br>
+									  	<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+									  	</p>
+									  </div>
+									</div>
+									<center><hr class="hr2"></center>
+									<div class="customer_feedback d-flex align-items-center">
+									  <div class="flex-shrink-0">
+									    <img class="cus_img img-fluid" src="images\294426947_3025629881061514_2843579351638858975_n.jpg" alt="...">
+									  </div>
+									  <div class="flex-grow-1 ms-3">
+									    <strong>Trương Hoàng Vũ Duy</strong>
+									  	<p>Không gian khá thoải mái, đồ uống cũng ngon, thích hợp để chạy deadline. Cho Shop 5 sao luôn.
+									  		<br>
+									  	<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+									  	</p>
+									  </div>
+									</div>
+									<center><hr class="hr2"></center>
+									<div class="customer_feedback d-flex align-items-center">
+									  <div class="flex-shrink-0">
+									    <img class="cus_img img-fluid" src="images\Thanhdat.jpg" alt="...">
+									  </div>
+									  <div class="flex-grow-1 ms-3">
+									    <strong>Nguyễn Thành Đạt</strong>
+									  	<p>Con mình rất thích khu trò chơi phía sau.
+									  		<br>
+									  	<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+									  	</p>
+									  </div>
+									</div>
+									<center><hr class="hr2"></center>
+									<div class="customer_feedback d-flex align-items-center">
+									  <div class="flex-shrink-0">
+									    <img class="cus_img img-fluid" src="images\278504354_3181834782101649_601147603877641087_n.jpg" alt="...">
+									  </div>
+									  <div class="flex-grow-1 ms-3">
+									    <strong>Trần Thanh Sang</strong>
+									  	<p>Quán làm nước hơi lâu, 4 sao thôi.
+									  		<br>
+									  	<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+									  	</p>
+									  </div>
+									</div>
+									<center><hr class="hr2"></center>
+									<div class="customer_feedback d-flex align-items-center">
+									  <div class="flex-shrink-0">
+									    <img class="cus_img img-fluid" src="images\rose.jpeg" alt="...">
+									  </div>
+									  <div class="flex-grow-1 ms-3">
+									    <strong>BlackPink Rosé</strong>
+									  	<p>좋은 음료는 주스를 좋아해요
+									  		<br>
+									  	<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+									  	</p>
+									  </div>
+									</div>
+									<center><hr class="hr2"></center>
+									<div class="customer_feedback d-flex align-items-center">
+									  <div class="flex-shrink-0">
+									    <img class="cus_img img-fluid" src="images\leeminho.jpg" alt="...">
+									  </div>
+									  <div class="flex-grow-1 ms-3">
+									    <strong>Lee Min Ho</strong>
+									  	<p>좋아요, 이 레스토랑의 공간이 정말 마음에 듭니다. 모두 여기로 오시기를 추천합니다
+									  		<br>
+									  	<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+									  	</p>
+									  </div>
+									</div>
+									<center><hr class="hr2"></center>
+									<div class="customer_feedback d-flex align-items-center">
+									  <div class="flex-shrink-0">
+									    <img class="cus_img img-fluid" src="images\ts.jpg" alt="...">
+									  </div>
+									  <div class="flex-grow-1 ms-3">
+									    <strong>Taylor Swift</strong>
+									  	<p>I don't like the coffe here, it's too expensive, Starbuck is better.
+									  		<br>
+									  	<i class="fa-solid fa-star"></i>
+									  	</p>
+									  </div>
+									</div>
+									<center><hr class="hr2"></center>
+									<div class="customer_feedback d-flex align-items-center">
+									  <div class="flex-shrink-0">
+									    <img class="cus_img img-fluid" src="images\wonyoung.jpg" alt="...">
+									  </div>
+									  <div class="flex-grow-1 ms-3">
+									    <strong>IVE Wonyoung</strong>
+									  	<p>가게는 꽤 괜찮아요. 여기 음악도 좋아요. Quan rat tuyet voi!!
+									  		<br>
+									  	<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+									  	</p>
+									  </div>
+									</div>
+									<center><hr class="hr2"></center>
+								</marquee>
+							</div>
+						</div>
+						<div class="news col-md-8">
+							<div class="row">
+								<div class="card card_news mb-3">
+								  <div class="row g-0">
+								    <div class="col-md-4">
+								      <img src="images\news1.jpg" class="img-fluid rounded-start" alt="...">
+								    </div>
+								    <div class="col-md-8">
+								      <div class="card-body">
+								        <h5 class="card-title">Đón Giáng Sinh cùng Thoong Coffee</h5>
+								        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								        <button type="button" class="btn btn-outline-light">Xem thêm <i class="fa-solid fa-angles-right"></i></button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="card card_news mb-3">
+								  <div class="row g-0">
+								    <div class="col-md-4">
+								      <img src="images\news2.jpg" class="img-fluid rounded-start" alt="...">
+								    </div>
+								    <div class="col-md-8">
+								      <div class="card-body">
+								        <h5 class="card-title">Chương trình khuyến mãi tháng 12</h5>
+								        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								        <button type="button" class="btn btn-outline-light">Xem thêm <i class="fa-solid fa-angles-right"></i></button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="card card_news mb-3">
+								  <div class="row g-0">
+								    <div class="col-md-4">
+								      <img src="images\news3.jpg" class="img-fluid rounded-start" alt="...">
+								    </div>
+								    <div class="col-md-8">
+								      <div class="card-body">
+								        <h5 class="card-title">Thoong Coffe đã có mặt tại Hikari</h5>
+								        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								        <button type="button" class="btn btn-outline-light">Xem thêm <i class="fa-solid fa-angles-right"></i></button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End -->
+				<!-- Đối tác -->
+				<div class="body-title">
+					<div class="d-flex justify-content-center">
+						<h2>Đối tác</h2>
+					</div>
+					<div class="d-flex justify-content-center">
+						<hr class="hr_title">
+					</div>
+				</div>
+				<div class="partner container">
+					<div class="d-flex justify-content-center">
+						<img class="img-fluid" src="images\partner-1.png">
+						<img class="img-fluid" src="images\partner-2.png">
+						<img class="img-fluid" src="images\partner-3.png">
+						<img class="img-fluid" src="images\partner-4.png">
+					</div>
+				</div>
+				<!-- End -->
+				<!-- Đăng kí -->
+				<div class="body-title">
+					<div class="d-flex justify-content-center">
+						<h2>Đăng kí thành viên ngay để nhận khuyến mãi</h2>
+					</div>
+					<div class="d-flex justify-content-center">
+						<hr class="hr_title">
+					</div>
+				</div>
+				<div class="register container">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="img-fluid" src="images\register1.jpg">
+						</div>
+						<div class="col-md-4">
+							<form class="register_form">
+								<div class="input-group mb-3">
+								  <span class="input-group-text"><i class="fa-regular fa-envelope"></i></span>
+								  <div class="form-floating">
+								    <input type="email" class="form-control" id="email" placeholder="Nhập địa chỉ email">
+								    <label for="email">Địa chỉ Email</label>
+								  </div>
+								</div>
+								<div class="input-group mb-3">
+								  <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+								  <div class="form-floating">
+								    <input type="text" class="form-control" id="name" placeholder="Nhập họ tên">
+								    <label for="name">Họ và tên</label>
+								  </div>
+								</div>
+								<div class="input-group mb-3">
+								  <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+								  <div class="form-floating">
+								    <input type="password" class="form-control" id="pass" placeholder="Nhập mật khẩu">
+								    <label for="pass">Mật khẩu</label>
+								  </div>
+								</div>
+								<div class="input-group mb-3">
+								  <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+								  <div class="form-floating">
+								    <input type="password" class="form-control" id="confirm" placeholder="Nhập lại mật khẩu">
+								    <label for="confirm">Nhập lại mất khẩu</label>
+								  </div>
+								</div>
+								<div class="d-flex justify-content-center">
+									<button type="button" class="btn btn-outline-light">Đăng kí <i class="fa-solid fa-check"></i></button>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-4">
+							<img class="img-fluid" src="images\register2.jpg">
+						</div>
+					</div>
+				</div>
+				<!-- End -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<img class="footer_img rounded mx-auto d-block" src="images\logo.jpg">
+					</div>
+					<div class="address_div col-md-3">
+						<h5>THOONG COFFEE <sub>ĐAM MÊ & CHIA SẺ</sub></h5>
+						<dl>
+							<dt>Bình Dương</dt>
+							<dd class="size_small"><i class="fa-sharp fa-solid fa-location-dot">
+								</i> Số 4 đường D5, KDC.Chánh Nghĩa, P.Chánh Nghĩa, TP.Thủ Dầu Một, Bình Dương
+								<p><i class="fa-solid fa-phone"></i> 0386725616</p>
+							</dd>
+							<dd class="size_small"><i class="fa-sharp fa-solid fa-location-dot">
+								</i> A12-A16 Đường Lý Thái Tổ, Phú Chánh, Tân Uyên, Bình Dương
+								<p><i class="fa-solid fa-phone"></i> 0386725616</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="col-md-4">
+						<h5>Google map:</h5>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.843990610885!2d106.66460090992003!3d10.975145855453148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d10e463e5773%3A0xb6f96ac9ab0828d9!2sThoong%20Coffee!5e0!3m2!1sen!2s!4v1702888001651!5m2!1sen!2s"width="100%" height="200" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+						></iframe>
+					</div>
+					<div class="col-md-3">
+						<h5>Gửi ý kiến đóng góp</h5>
+						<div>
+						  <label for="exampleFormControlInput1" class="mar0_pad0 form-label">Email</label>
+						  <input type="email" class="mar0_pad0 form-control" id="exampleFormControlInput1" placeholder="Nhập Email của bạn">
+						</div>
+						<div>
+						  <label for="exampleFormControlTextarea1" class="mar0_pad0 form-label">Feedback</label>
+						  <textarea class="mar0_pad0 form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Nhập ý kiến đóng góp"></textarea>
+						</div>
+						<p class="mar0_pad0"><b>Our social media</b></p>
+						<p class="social_media">
+							<a href="https://www.facebook.com/profile.php?id=100063524667152"><i class="fa-brands fa-facebook"></i></a> 
+							<a href="https://www.facebook.com/profile.php?id=100063524667152"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://www.facebook.com/profile.php?id=100063524667152"><i class="fa-brands fa-square-twitter"></i></a>
+							<a href="https://www.facebook.com/profile.php?id=100063524667152"><i class="fa-brands fa-square-youtube"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="copy_right d-flex justify-content-center">
+					<p><i class="fa-regular fa-copyright"></i> Design By Email: <a href="https://mail.google.com/">tan.lenguyen.cit19@eiu.edu.vn</a> | Facebook: <a href="https://www.facebook.com/tan.lenguyen.90/">Thanh Tan</a></p>
+				</div>
+		</footer>
+		<button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+		  <i class="fas fa-arrow-up"></i>
+		</button>
+
+		<script type="text/javascript">
+			let mybutton = document.getElementById("btn-back-to-top");
+			window.onscroll = function () {
+			  scrollFunction();
+			};
+
+			function scrollFunction() {
+			  if (
+			    document.body.scrollTop > 300 ||
+			    document.documentElement.scrollTop > 300
+			  ) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+			mybutton.addEventListener("click", backToTop);
+
+			function backToTop() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+	</body>
+</html>
